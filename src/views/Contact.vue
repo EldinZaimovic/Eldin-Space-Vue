@@ -61,7 +61,7 @@
           <v-btn @click="clear">clear</v-btn>
         </form>-->
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" netlify>
           <v-text-field
             name="name"
             color="green"
