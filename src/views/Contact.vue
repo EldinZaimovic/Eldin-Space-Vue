@@ -33,37 +33,8 @@
           <span>Contact</span>
           <span class="green--text">Form</span>
         </h2>
-        <!-- <form method="POST" action="https://formspree.io/eldin@zaimovic.com">
-          <v-text-field
-            name="name"
-            solo
-            v-model="name"
-            :error-messages="nameErrors"
-            :counter="10"
-            label="Name"
-            required
-            @input="$v.name.$touch()"
-            @blur="$v.name.$touch()"
-          ></v-text-field>
-          <v-text-field
-            type="email"
-            solo
-            name="email"
-            v-model="email"
-            :error-messages="emailErrors"
-            label="E-mail"
-            required
-            @input="$v.email.$touch()"
-            @blur="$v.email.$touch()"
-          ></v-text-field>
-          <v-textarea solo v-model="body" label="Solo textarea" name="body"></v-textarea>
-          <v-btn type="submit" color="green" dark>submit</v-btn>
-          <v-btn @click="clear">clear</v-btn>
-        </form>-->
 
-        <form name="contact" method="post" netlify data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact">
-
+        <form method="POST" action="https://formspree.io/eldin@zaimovic.com">
           <v-text-field
             name="name"
             color="green"
