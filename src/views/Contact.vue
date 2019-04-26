@@ -61,8 +61,9 @@
           <v-btn @click="clear">clear</v-btn>
         </form>-->
 
-        <form name="contact" method="POST" netlify data-netlify-honeypot="bot-field">
+        <form name="contact" method="post" netlify data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">
+
           <v-text-field
             name="name"
             color="green"
