@@ -60,7 +60,7 @@ export default {
         {
           dialog: false,
           title: "This Site",
-          git: "https://github.com/EldinZaimovic",
+          git: "https://github.com/EldinZaimovic/Eldin-Space-Vue",
           demo: "https://eldin.space/",
           tech: {
             tech1: "VUE",
