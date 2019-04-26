@@ -1,6 +1,7 @@
 <template>
   <v-layout column justify-center class="mt-4 pt-2" v-editable="result.blok">
     <h1 class="text-xs-center mb-4 pb-2">{{result.title}}</h1>
+    <span>{{result.date.getDate()+1}}.{{result.date.getMonth()+1}}.{{result.date.getFullYear()}}</span>
     <v-img :src="result.image" aspect-ratio="2.75" height="330" contain></v-img>
     <v-layout column justify-center align-center class="mt-4 pt-2">
       <p v-html="body"></p>
@@ -65,7 +66,8 @@ export default {
               title: bp.content.title,
               blok: bp.content,
               image: bp.content.thumbnail,
-              content: bp.content.content
+              content: bp.content.content,
+              date: new Date(bp.content.date)
             };
           });
           console.log(this.posts);
