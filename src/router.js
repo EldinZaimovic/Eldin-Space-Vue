@@ -1,25 +1,70 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Vue from "vue";
+import Router from "vue-router";
+import Home from "./views/Home.vue";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
+  routes: [{
+      path: "/",
+      name: "home",
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: "/contact",
+      name: "contact",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Contact.vue")
+    },
+    {
+      path: "/resume",
+      name: "resume",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Resume.vue")
+    },
+    {
+      path: "/blog",
+      name: "blog",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Blog.vue")
+    },
+    {
+      path: "/blog/:id",
+      name: "blogPost",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/BlogPost.vue")
+    },
+    {
+      path: "/services",
+      name: "services",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Services.vue")
+    },
+    {
+      path: "/portfolio",
+      name: "portfolio",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Portfolio/Portfolio.vue")
+    },
+    {
+      path: "/portfolio/video",
+      name: "videoPortfolio",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Portfolio/Video.vue")
+    },
+    {
+      path: "/portfolio/graphic",
+      name: "graphicPortfolio",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Portfolio/Graphic.vue")
+    },
+    {
+      path: "/portfolio/web",
+      name: "webPortfolio",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Portfolio/Web.vue")
     }
   ]
-})
+});
