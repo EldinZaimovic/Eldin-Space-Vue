@@ -13,6 +13,7 @@
     "storyblok-js-client": "^1.0.22",
     "storyblok-vue": "^1.0.5",
     "vue": "^2.6.6",
+    "vue-analytics": "^5.16.4",
     "vue-compare-image": "^0.1.3",
     "vue-meta": "^1.6.0",
     "vue-plyr": "^5.1.3",
