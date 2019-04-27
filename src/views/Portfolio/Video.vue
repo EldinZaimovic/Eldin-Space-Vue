@@ -19,7 +19,7 @@
                 :src="video.poster"
                 aspect-ratio="1.7778"
                 :alt="video.title"
-                lazy-src="http://fadbrandz.com/images/preloader2.gif"
+                lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
                 contain
               ></v-img>
               <v-card-title primary-title class="justify-center">{{video.title}}</v-card-title>

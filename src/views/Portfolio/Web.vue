@@ -19,7 +19,7 @@
                 :src="project.poster"
                 :alt="project.title"
                 height="230"
-                lazy-src="http://fadbrandz.com/images/preloader2.gif"
+                lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
               ></v-img>
               <v-card-title primary-title class="justify-center">{{project.title}}</v-card-title>
             </v-card>

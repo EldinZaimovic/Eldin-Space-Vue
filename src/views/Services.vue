@@ -15,7 +15,7 @@
             height="100"
             aspect-ratio="2.75"
             :alt="'Eldin do '+service.title"
-            lazy-src="http://fadbrandz.com/images/preloader2.gif"
+            lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
             contain
           ></v-img>
           <v-card-title class="justify-center">
@@ -37,7 +37,7 @@
               slot-scope="{ hover }"
               :src="client.src"
               :alt="client.name+' logo'"
-              lazy-src="http://fadbrandz.com/images/preloader2.gif"
+              lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
               height="100"
               width="160"
               aspect-ratio="2.75"
