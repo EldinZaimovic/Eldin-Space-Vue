@@ -93,7 +93,7 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
         <h2>
-          <span>Coding</span>
+          <span>Design</span>
 
           <span class="green--text">Skills</span>
         </h2>
@@ -107,7 +107,7 @@
       </v-flex>
       <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
         <h2>
-          <span>Design</span>
+          <span>Coding</span>
           <span class="green--text">Skills</span>
         </h2>
         <br>
