@@ -8,7 +8,7 @@
         </h2>
       </v-flex>
       <v-flex v-for="service in services" :key="service.src" xs6 sm3 md3 lg3 xl3>
-        <v-card hover flat color="transparent">
+        <v-card hover flat color="transparent" :style="{'cursor':'context-menu'}">
           <v-card-title></v-card-title>
           <v-img
             :src="service.src"
