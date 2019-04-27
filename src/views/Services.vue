@@ -147,7 +147,7 @@ export default {
         },
         {
           src: "https://i.imgur.com/tcZnDep.png",
-          title: "Advetising"
+          title: "Advertising"
         }
       ]
     };
