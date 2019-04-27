@@ -41,7 +41,7 @@
         <span class="green--text">Zaimovic</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn @click="changeTheme" depressed small icon class="hidden-md-and-up pb-3">
+      <v-btn @click="changeTheme" depressed small icon class="hidden-md-and-up">
         <v-icon v-if="goDark==true">fas fa-sun</v-icon>
         <v-icon v-else>fas fa-moon</v-icon>
       </v-btn>
@@ -52,7 +52,7 @@
         <v-btn flat to="/portfolio" active-class="green--text headline">Portfolio</v-btn>
         <v-btn flat to="/blog" active-class="green--text headline">Blog</v-btn>
         <v-btn flat to="/contact" active-class="green--text headline">Contact</v-btn>
-        <v-btn @click="changeTheme" depressed small icon class="pb-3">
+        <v-btn @click="changeTheme" depressed small icon>
           <v-icon v-if="goDark==true">fas fa-sun</v-icon>
           <v-icon v-else>fas fa-moon</v-icon>
         </v-btn>
