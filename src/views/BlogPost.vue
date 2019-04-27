@@ -1,8 +1,8 @@
 <template>
   <v-layout column justify-center class="mt-4 pt-2" v-editable="result.blok">
     <h1 class="text-xs-center mb-4 pb-2">{{result.title}}</h1>
-    <span>{{result.date.getDate()+1}}.{{result.date.getMonth()+1}}.{{result.date.getFullYear()}}</span>
-    <v-img :src="result.image" aspect-ratio="2.75" height="330" contain></v-img>
+    <span>{{result.date.getDate()}}.{{result.date.getMonth()+1}}.{{result.date.getFullYear()}}</span>
+    <v-img :src="result.image" aspect-ratio="2.75" height="330" contain :alt="result.title"></v-img>
     <v-layout column justify-center align-center class="mt-4 pt-2">
       <p v-html="body"></p>
     </v-layout>
@@ -27,6 +27,32 @@ export default {
     return {
       posts: [],
       result: {}
+    };
+  },
+  metaInfo() {
+    return {
+      title: "Blog",
+      titleTemplate: "%s ← " + this.result.title,
+      meta: [
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content: this.result.content
+        },
+        { charset: "utf-8" },
+        { property: "og:title", content: "Eldin' Space" },
+        { property: "og:site_name", content: "Eldin' Space" },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://eldin.space" },
+        {
+          property: "og:image",
+          content: "https://i.imgur.com/Dcz2PGx.jpg"
+        },
+        {
+          property: "og:description",
+          content: this.result.content
+        }
+      ]
     };
   },
   computed: {
@@ -59,7 +85,6 @@ export default {
           starts_with: "blog/"
         })
         .then(res => {
-          console.log(res.data.stories);
           this.posts = res.data.stories.map(bp => {
             return {
               id: bp.slug,
@@ -70,11 +95,9 @@ export default {
               date: new Date(bp.content.date)
             };
           });
-          console.log(this.posts);
           this.result = this.posts.find(
             rightPost => rightPost.id === this.$route.params.id
           );
-          console.log(this.result);
         })
         .catch(error => {
           console.log(error);

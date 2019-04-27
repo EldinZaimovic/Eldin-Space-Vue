@@ -24,6 +24,30 @@ let storyapi = new StoryblokClient({
 });
 
 export default {
+  metaInfo: {
+    title: "Eldin' Space",
+    titleTemplate: "%s ← Blog",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "description",
+        content: "Eldin Zaimovic's Blog"
+      },
+      { charset: "utf-8" },
+      { property: "og:title", content: "Eldin' Space" },
+      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://eldin.space" },
+      {
+        property: "og:image",
+        content: "https://i.imgur.com/Dcz2PGx.jpg"
+      },
+      {
+        property: "og:description",
+        content: "Eldin Zaimovic's Blog"
+      }
+    ]
+  },
   data() {
     return {
       posts: []
@@ -62,7 +86,6 @@ export default {
               thumbnailUrl: bp.content.thumbnail
             };
           });
-          console.log(res.data.stories);
         })
         .catch(error => {
           console.log(error);

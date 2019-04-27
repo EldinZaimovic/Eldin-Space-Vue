@@ -42,6 +42,32 @@
 import { PlyrVideo } from "vue-plyr";
 
 export default {
+  metaInfo: {
+    title: "Eldin' Space",
+    titleTemplate: "%s ← Video Portfolio",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "description",
+        content:
+          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+      },
+      { charset: "utf-8" },
+      { property: "og:title", content: "Eldin' Space" },
+      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://eldin.space" },
+      {
+        property: "og:image",
+        content: "https://i.imgur.com/Dcz2PGx.jpg"
+      },
+      {
+        property: "og:description",
+        content:
+          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+      }
+    ]
+  },
   components: { plyr: PlyrVideo },
   data() {
     return {

@@ -52,7 +52,32 @@
 
 <script>
 export default {
-  components: {},
+  metaInfo: {
+    title: "Eldin' Space",
+    titleTemplate: "%s ← Web Portfolio",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "description",
+        content:
+          "Eldin Zaimovic's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
+      },
+      { charset: "utf-8" },
+      { property: "og:title", content: "Eldin' Space" },
+      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://eldin.space" },
+      {
+        property: "og:image",
+        content: "https://i.imgur.com/Dcz2PGx.jpg"
+      },
+      {
+        property: "og:description",
+        content:
+          "Eldin Zaimovic's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
+      }
+    ]
+  },
   data() {
     return {
       dialog: false,

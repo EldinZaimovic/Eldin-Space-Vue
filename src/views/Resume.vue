@@ -136,7 +136,32 @@
 
 <script>
 export default {
-  components: {},
+  metaInfo: {
+    title: "Eldin' Space",
+    titleTemplate: "%s ← Resume",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "description",
+        content:
+          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
+      },
+      { charset: "utf-8" },
+      { property: "og:title", content: "Eldin' Space" },
+      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://eldin.space" },
+      {
+        property: "og:image",
+        content: "https://i.imgur.com/Dcz2PGx.jpg"
+      },
+      {
+        property: "og:description",
+        content:
+          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
+      }
+    ]
+  },
   data() {
     return {
       value: 0,

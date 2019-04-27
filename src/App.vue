@@ -24,6 +24,24 @@ import TheFooter from "./components/TheFooter";
 
 export default {
   name: "App",
+  metaInfo: {
+    title: "Eldin' Space",
+    titleTemplate: "%s ← Home",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "description", content: "Eldin Zaimovic's Portfolio" },
+      { charset: "utf-8" },
+      { property: "og:title", content: "Eldin' Space" },
+      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://eldin.space" },
+      {
+        property: "og:image",
+        content: "https://i.imgur.com/Dcz2PGx.jpg"
+      },
+      { property: "og:description", content: "Eldin Zaimovic's Portfolio" }
+    ]
+  },
   components: {
     TheHeader,
     TheFooter
