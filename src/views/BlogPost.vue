@@ -31,8 +31,8 @@ export default {
   },
   metaInfo() {
     return {
-      title: "%s ← " + this.result.title,
-      titleTemplate: "Blog",
+      title: this.result.title,
+      titleTemplate: "%s ← Eldin's Blog",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
