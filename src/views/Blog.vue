@@ -25,8 +25,8 @@ let storyapi = new StoryblokClient({
 
 export default {
   metaInfo: {
-    title: "Eldin's Space",
-    titleTemplate: "%s ← Blog",
+    title: "Blog",
+    titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {

@@ -43,8 +43,8 @@ import { PlyrVideo } from "vue-plyr";
 
 export default {
   metaInfo: {
-    title: "Eldin's Space",
-    titleTemplate: "%s ← Video Portfolio",
+    title: "Video Portfolio",
+    titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {

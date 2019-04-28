@@ -101,8 +101,8 @@ import VueCompareImage from "vue-compare-image";
 
 export default {
   metaInfo: {
-    title: "Eldin's Space",
-    titleTemplate: "%s ← Home",
+    title: "Home",
+    titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "description", content: "Eldin Zaimovic's Portfolio" },

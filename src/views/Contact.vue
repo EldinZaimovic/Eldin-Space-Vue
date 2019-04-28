@@ -90,8 +90,8 @@ import {
 } from "vuelidate/lib/validators";
 export default {
   metaInfo: {
-    title: "Eldin's Space",
-    titleTemplate: "%s ← Contact",
+    title: "Contact",
+    titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {

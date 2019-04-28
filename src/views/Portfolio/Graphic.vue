@@ -36,8 +36,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "Eldin's Space",
-    titleTemplate: "%s ← Graphic Portfolio",
+    title: "Graphic Portfolio ",
+    titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {

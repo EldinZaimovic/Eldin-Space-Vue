@@ -137,8 +137,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "Eldin's Space",
-    titleTemplate: "%s ← Resume",
+    title: "Resume",
+    titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
