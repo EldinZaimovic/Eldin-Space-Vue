@@ -157,7 +157,7 @@ export default {
   }
 };
 </script>
-<style >
+<style>
 @keyframes rocking {
   0%,
   100% {
