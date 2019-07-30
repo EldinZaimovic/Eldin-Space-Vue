@@ -159,4 +159,3 @@ export default {
   opacity: 0.3;
 }
 </style>
-

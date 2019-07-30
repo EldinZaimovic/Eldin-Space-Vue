@@ -97,6 +97,32 @@ export default {
         },
         {
           dialog: false,
+          title: "Frontend Developer at Brandly.com",
+          git: "https://cdn.neow.in/news/images/uploaded/2018/11/1543476286_cybersecurity.jpg",
+          demo: "https://www.brandly.com/",
+          tech: {
+            tech1: "VUE",
+            tech2: "SCSS",
+            tech3: "HTML",
+            tech4: "JavaScript"
+          },
+          poster: "https://i.imgur.com/nVqtTAf.png"
+        },
+        {
+          dialog: false,
+          title: "Digital Madness Test",
+          git: "https://github.com/EldinZaimovic/Digital-Madness-test",
+          demo: "https://digital-madness-test.netlify.com/",
+          tech: {
+            tech1: "VUE",
+            tech2: "CSS",
+            tech3: "HTML",
+            tech4: "JavaScript"
+          },
+          poster: "https://i.imgur.com/GOIIL06.png"
+        },
+        {
+          dialog: false,
           title: "Snowball Coding Challenge",
           git: "https://github.com/EldinZaimovic/SnowBall-Project",
           demo: "https://snowball-test.netlify.com/",
