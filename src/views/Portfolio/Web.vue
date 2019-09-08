@@ -82,6 +82,19 @@ export default {
     return {
       dialog: false,
       projects: [
+         {
+          dialog: false,
+          title: "Euphoric Voyage",
+          git: "https://github.com/EldinZaimovic/euphoric-voyage",
+          demo: "https://www.euphoric-voyage.com/",
+          tech: {
+            tech1: "Gatsby",
+            tech2: "JavaScript",
+            tech3: "SCSS",
+            tech4: "Markdown"
+          },
+          poster: "https://i.imgur.com/9Ww2bvm.png"
+        },
         {
           dialog: false,
           title: "This Site",
