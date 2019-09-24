@@ -90,6 +90,11 @@ export default {
     return {
       clients: [
         {
+          name: "Brandly",
+          src: "https://i.imgur.com/BLJ16wb.png",
+          href: "https://www.brandly.com/"
+        },
+        {
           name: "EEVOY",
           src: "https://i.imgur.com/lIJePVb.png",
           href: "https://www.eevoy.com/"
