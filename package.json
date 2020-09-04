@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.9",
-    "marked": "^0.6.3",
+    "marked": "^0.7.0",
     "storyblok-js-client": "^1.0.32",
     "storyblok-vue": "^1.0.5",
     "vue": "^2.6.6",
